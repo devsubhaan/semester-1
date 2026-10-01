@@ -8,7 +8,20 @@
 numerator_input = input("Enter the numerator: ")
 denominator_input = input("Enter the denominator: ")
 
-# TODO: wrap the risky operations in a try/except block
-# TODO: convert the values to integers and perform the division
-# TODO: print clear feedback when something goes wrong
-# TODO: only show the answer when the division succeeds
+# Wrap the risky operations in a try/except block
+# Convert the values to integers and perform the division
+try:
+    numerator_input = int(numerator_input)
+    denominator_input = int(denominator_input)
+except ValueError:
+    print("Invalid inputs!")
+
+# Print clear feedback when something goes wrong
+try:
+    result = numerator_input / denominator_input
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+else:
+    # Only show the answer when the division succeeds
+    print(f"Result: {result}")
+
