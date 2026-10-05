@@ -1,0 +1,14 @@
+Sample Exam Question
+
+Consider the following fragment of Python code:
+
+data = [0.7, 1.2, 0.9, 1.0]
+
+print(data[index])
+
+(a) What happens when this code runs, if index has the value 1?
+    prints out 0.7
+(b) What happens when this code runs, if index has the value 4?
+    index error (index 4 does not exist)
+(c) What happens when this code runs, if index has the value –1?
+    prints out 1.0 (starts from end)
