@@ -8,6 +8,9 @@ except ValueError:
     print("Error: Grade must be an integer between 0 and 100")
     sys.exit("Error!")
 
+if not 0 <= grade <= 100:
+    sys.exit("Error: Grade must be an integer between 0 and 100")
+
 result = "Fail"
 
 if 70 <= grade <= 100:
