@@ -1,0 +1,18 @@
+**************************
+2026-10-08 15:40:56.144754
+Temperature: 60
+Pressure: 40
+Status: 1
+The temperature is within safe limits.
+Pressure is low, system is operating normally.
+Everything is working normally.
+**************************
+**************************
+2026-10-08 15:41:28.161605
+Temperature: 60
+Pressure: 30
+Status: 0
+The temperature is within safe limits.
+Pressure is low, system is operating normally.
+Machine is stopped, no immediate action needed.
+**************************
