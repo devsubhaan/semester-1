@@ -8,7 +8,6 @@ result = "*"*26 + '\n' + str(datetime.datetime.now()) + '\n'
 result += f"Temperature: {temp}" + '\n'
 result += f"Pressure: {pressure}" + '\n'
 result += f"Status: {status}" + '\n'
-
 highTemp = False
 if temp > 80:
     highTemp = True

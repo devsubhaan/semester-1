@@ -1,14 +1,18 @@
 # Worksheet 1.3: Task 3
-
+import os
+import sys
 # Your code for the overall grade classification
-
 # ask for filename of the student file
+filename = input("What is the file name (csv) of the student file? ")
+if not os.path.exists(filename):
+    sys.exit("Invalid file, make sure to add .csv at the end!")
 
 # open the file
-
-# read in the data, and for each student calculate their average grade and classification
-
-
+with open(filename) as f:
+    # read in the data, and for each student calculate their average grade and classification
+    col = f.readline()
+    while f.readline():
+        print(f.readline())
 
 # write out this calculated data in the format without a header:
 #      student_id,average_grade,classification - replace this with actual value
