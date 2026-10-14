@@ -7,19 +7,19 @@ Name:
 states = { "red":4, "red_amber":3, "green":5, "amber":3 }
 
 systime = 0
-maxtime = int(input())  # read an integer number of steps (>0)
+maxtime = int(input(""))  # read an integer number of steps (>0)
 
 state = "red"
-
-
+count = 0
 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
-for colour, time in states.items():
-    for i in range(time):
-        print(f"Time {systime:03} State {colour}")
-        systime +=1
-        if systime > maxtime:
+while count < maxtime:
+    for colour, item in states.items():
+        for i in range(item):
+            print(f"Time {systime:03} State {colour}")
+            systime += 1
+            count += 1
+            if count == maxtime+1:
+                break
+        if count == maxtime+1:
             break
-    if systime > maxtime:
-        break    
-# At the end of each step you should output the time and state using the statement on line 14
