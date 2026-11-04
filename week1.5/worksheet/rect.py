@@ -42,7 +42,7 @@ class Rectangle:
         """
         return (2 * self.height) + (2 * self.width)
 
-""""""
+"""
 test = Rectangle(5, 5)
 print(test.area())
 print(test.is_square())
@@ -52,4 +52,4 @@ test2 = Rectangle(6, 5.2)
 print(test2.area())
 print(test2.is_square())
 print(test2.perimeter())
-""""""
+"""
